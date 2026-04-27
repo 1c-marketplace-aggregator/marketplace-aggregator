@@ -1,0 +1,194 @@
+!SESSION 2026-04-27 21:42:26.616 -----------------------------------------------
+eclipse.buildId=2025.2.5.2
+java.version=17.0.18
+java.vendor=Azul Systems, Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\kiruxa\AppData\Local\1C\1cedtstart\projects\marketplace-aggregator
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2026-04-27 21:42:34.162
+!MESSAGE java.vm.name=OpenJDK 64-Bit Server VM
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2026-04-27 21:42:34.168
+!MESSAGE java.vm.info=mixed mode, sharing
+
+!ENTRY com.e1c.g5.v8.dt.platform.standaloneserver.wst.core 1 0 2026-04-27 21:42:34.789
+!MESSAGE Начат однократный процесс перевода на новую версию: Переключение на сервер отладки, встроенный в автономный сервер.
+
+!ENTRY com.company1c.link.ide.edt 1 0 2026-04-27 21:42:34.939
+!MESSAGE iLOG: 1C:Link addon is initializing. Web config state is in C:\Users\kiruxa\AppData\Local\1C\1cedtstart\projects\marketplace-aggregator\.metadata\.plugins\com.company1c.link.ide.edt
+
+!ENTRY org.eclipse.ui.navigator 4 0 2026-04-27 21:42:38.316
+!MESSAGE An extension already exists with id "org.eclipse.wst.server.ui.ServersView.content.root".
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 2 0 2026-04-27 21:42:38.779
+!MESSAGE Файл настроек программы запуска 1С:Предприятие не существует. Невозможно загрузить из него местонахождение списка зарегистрированных информационных баз: C:\ProgramData\Application Data\1C\1CEStart\1cestart.cfg
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 2 0 2026-04-27 21:42:38.779
+!MESSAGE Файл настроек программы запуска 1С:Предприятие не существует. Невозможно загрузить из него местонахождение списка зарегистрированных информационных баз: C:\Users\kiruxa\AppData\Roaming\1C\1CEStart\1cestart.cfg
+
+!ENTRY org.eclipse.ui.navigator.resources 4 0 2026-04-27 21:42:40.338
+!MESSAGE Required filter org.eclipse.ui.navigator.resources.filters.workingSet is not present. Working set support will not function correctly.
+
+!ENTRY org.eclipse.ui.navigator.resources 4 0 2026-04-27 21:42:40.339
+!MESSAGE 
+
+!ENTRY com._1c.g5.v8.dt.platform.services.core 2 0 2026-04-27 21:42:41.998
+!MESSAGE Error occured while searching web servers
+!STACK 0
+java.io.IOException: Cannot run program "wmic": CreateProcess error=2, Не удается найти указанный файл
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at com._1c.g5.v8.dt.platform.services.core.webservers.ApacheWmicLookup.findApacheExcecutorLocations(ApacheWmicLookup.java:28)
+	at com._1c.g5.v8.dt.platform.services.core.webservers.AbstractWindowsApacheLookup.lookup(AbstractWindowsApacheLookup.java:40)
+	at com._1c.g5.v8.dt.internal.platform.services.core.webservers.WebServerManager.search(WebServerManager.java:277)
+	at com._1c.g5.v8.dt.internal.platform.services.core.webservers.WebServerManager.getWebServersResource(WebServerManager.java:203)
+	at com._1c.g5.v8.dt.internal.platform.services.core.webservers.WebServerManager.getAll(WebServerManager.java:169)
+	at com._1c.g5.v8.dt.internal.platform.services.core.webservers.WebServerManager.getAll(WebServerManager.java:162)
+	at com._1c.g5.v8.dt.internal.platform.services.core.webservers.WebServerManager.activate(WebServerManager.java:108)
+	at com._1c.g5.wiring.ManagedServicesSupport.activateManagedService(ManagedServicesSupport.java:40)
+	at com._1c.g5.internal.wiring.InjectorAwareManagedServiceRegistrationBuilder.prepareInstance(InjectorAwareManagedServiceRegistrationBuilder.java:61)
+	at com._1c.g5.internal.wiring.InjectorAwareManagedServiceRegistrationBuilder.prepareInstance(InjectorAwareManagedServiceRegistrationBuilder.java:1)
+	at com._1c.g5.internal.wiring.InjectorAwareServiceRegistrationBuilder.registerInjected(InjectorAwareServiceRegistrationBuilder.java:81)
+	at com._1c.g5.internal.wiring.InjectorAwareServiceRegistrationBuilder.registerInjected(InjectorAwareServiceRegistrationBuilder.java:63)
+	at com._1c.g5.v8.dt.internal.platform.services.core.PlatformServicesCore.lambda$8(PlatformServicesCore.java:470)
+	at com._1c.g5.internal.wiring.WiringPlugin$InitializationContext.lambda$0(WiringPlugin.java:329)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.io.IOException: CreateProcess error=2, Не удается найти указанный файл
+	at java.base/java.lang.ProcessImpl.create(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:505)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:158)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	... 19 more
+
+!ENTRY com._1c.g5.v8.dt.md.ui 1 0 2026-04-27 22:01:44.835
+!MESSAGE Создается новый проект кофигурации УчетПродажМаркетплейсов
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2026-04-27 22:01:44.971
+!MESSAGE Project context is being started: УчетПродажМаркетплейсов (NEW_PROJECT)
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2026-04-27 22:01:48.720
+!MESSAGE Starting phase LINKING of context ProjectContext: УчетПродажМаркетплейсов
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2026-04-27 22:01:48.720
+!MESSAGE Starting phase INITIALIZATION of context ProjectContext: УчетПродажМаркетплейсов
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2026-04-27 22:01:49.853
+!MESSAGE Starting phase CHECKING of context ProjectContext: УчетПродажМаркетплейсов
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2026-04-27 22:01:49.862
+!MESSAGE Starting phase STORAGE_INITIALIZATION of context ProjectContext: УчетПродажМаркетплейсов
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2026-04-27 22:01:50.105
+!MESSAGE Starting phase RESOURCE_LOADING of context ProjectContext: УчетПродажМаркетплейсов
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2026-04-27 22:01:50.356
+!MESSAGE Starting phase POST_RESOURCE_LOADING of context ProjectContext: УчетПродажМаркетплейсов
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2026-04-27 22:01:50.426
+!MESSAGE Project context is started: УчетПродажМаркетплейсов
+
+!ENTRY com._1c.g5.v8.dt.platform.services.ui 8 0 2026-04-27 22:05:31.102
+!MESSAGE Deploying project has been cancelled because application creation has been cancelled.
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2026-04-27 22:05:40.452
+!MESSAGE Попытка удаления проекта: УчетПродажМаркетплейсов
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2026-04-27 22:05:40.658
+!MESSAGE Project context is being stopped: УчетПродажМаркетплейсов (DELETE)-(com._1c.g5.v8.dt.core.platform.workspace-project)
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2026-04-27 22:05:40.773
+!MESSAGE Project context is stopped: УчетПродажМаркетплейсов
+
+!ENTRY com._1c.g5.v8.dt.md.ui 1 0 2026-04-27 22:05:46.567
+!MESSAGE Создается новый проект кофигурации АгрегаторМаркетплейсов
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2026-04-27 22:05:46.583
+!MESSAGE Project context is being started: АгрегаторМаркетплейсов (NEW_PROJECT)
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2026-04-27 22:05:46.584
+!MESSAGE Starting phase LINKING of context ProjectContext: АгрегаторМаркетплейсов
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2026-04-27 22:05:46.584
+!MESSAGE Starting phase INITIALIZATION of context ProjectContext: АгрегаторМаркетплейсов
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2026-04-27 22:05:46.591
+!MESSAGE Starting phase CHECKING of context ProjectContext: АгрегаторМаркетплейсов
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2026-04-27 22:05:46.593
+!MESSAGE Starting phase STORAGE_INITIALIZATION of context ProjectContext: АгрегаторМаркетплейсов
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2026-04-27 22:05:46.642
+!MESSAGE Starting phase RESOURCE_LOADING of context ProjectContext: АгрегаторМаркетплейсов
+
+!ENTRY com._1c.g5.v8.dt.lifecycle 1 0 2026-04-27 22:05:46.651
+!MESSAGE Starting phase POST_RESOURCE_LOADING of context ProjectContext: АгрегаторМаркетплейсов
+
+!ENTRY com._1c.g5.v8.dt.core 1 0 2026-04-27 22:05:46.694
+!MESSAGE Project context is started: АгрегаторМаркетплейсов
+
+!ENTRY com.e1c.edt.ai.ui.common 1 0 2026-04-27 22:13:49.213
+!MESSAGE AI response /api/v1/create_session
+status code: 401
+duration: PT0.8778262S
+(POST https://code.1c.ai/api/v1/create_session) 401
+{"error":"No token provided","error_type":"no_token"}
+
+!ENTRY com.e1c.edt.ai.ui.common 1 0 2026-04-27 22:13:49.214
+!MESSAGE AI response /api/v1/create_session
+status code: 401
+duration: PT1.1726227S
+(POST https://code.1c.ai/api/v1/create_session) 401
+{"error":"No token provided","error_type":"no_token"}
+
+!ENTRY com.e1c.edt.ai.ui.common 1 0 2026-04-27 22:13:49.230
+!MESSAGE AI HTTP session response status code is 401
+
+!ENTRY com.e1c.edt.ai.ui.common 1 0 2026-04-27 22:13:49.230
+!MESSAGE AI HTTP session response status code is 401
+
+!ENTRY com.e1c.edt.ai.ui.common 2 0 2026-04-27 22:13:49.230
+!MESSAGE jobs
+Running non infrastructure job "1С:Напарник Фоновая задача" while plugin is disabled.
+
+!ENTRY com.e1c.edt.ai.ui.common 2 0 2026-04-27 22:14:17.941
+!MESSAGE jobs
+Running non infrastructure job "1С:Напарник Взаимодействие с чатом" while plugin is disabled.
+
+!ENTRY org.eclipse.ui 4 0 2026-04-27 22:18:29.919
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:903)
+	at com.e1c.edt.ai.ui.AITarget.<init>(AITarget.java:18)
+	at com.e1c.edt.ai.ui.quickaccess.AskAIQuickAccessElement.lambda$0(AskAIQuickAccessElement.java:60)
+	at java.base/java.util.Optional.flatMap(Optional.java:289)
+	at com.e1c.edt.ai.ui.quickaccess.AskAIQuickAccessElement.execute(AskAIQuickAccessElement.java:59)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4046)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1432)

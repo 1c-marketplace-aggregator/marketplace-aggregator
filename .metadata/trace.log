@@ -1,0 +1,35 @@
+# !SESSION 2026-04-27 21:42:34.400
+# version: 1.1
+# verbose: true
+# The following option strings are specified for this debug session:
+# 	com.e1c.g5.v8.dt.platform.standaloneserver.wst.core/debug=true
+# 	org.eclipse.core.runtime/perf/success=true
+# 	com._1c.g5.v8.dt.compare/debug=true
+# 	com.e1c.g5.v8.dt.platform.standaloneserver.core/debug=true
+# 	com._1c.g5.v8.dt.platform.services.core/trace/infobase/resource-processing=true
+# 	com.e1c.g5.v8.dt.platform.cloud.core/trace/cloud/sync/console=true
+# 	com.e1c.g5.v8.dt.platform.cloud.core/debug=true
+# 	com._1c.g5.v8.dt.platform.services.core/trace/infobase/load=true
+# 	org.eclipse.core.runtime/debug=true
+# 	org.eclipse.core.runtime/perf=true
+# 	com.e1c.g5.v8.dt.platform.standaloneserver.core/trace=true
+# 	org.eclipse.wst.server.core/severe=true
+# 	com._1c.g5.v8.dt.platform.services.core/trace/platform=true
+# 	com.e1c.g5.v8.dt.platform.cloud.core/trace/cloud/process=true
+# 	com.e1c.g5.v8.dt.platform.cloud.core/trace/cloud/tunnel/console=true
+# 	com._1c.g5.v8.dt.platform.services.core/trace/infobase/load/object-resolve=true
+# 	com.e1c.g5.v8.dt.platform.cloud.wst.core/debug=true
+# 	com._1c.g5.v8.dt.platform.services.core/preferences/keep-temp-files/fail=true
+# 	com.e1c.g5.v8.dt.platform.cloud.wst.core/trace=true
+# 	com._1c.g5.v8.dt.platform.services.core/debug=true
+# 	com._1c.g5.v8.dt.compare/trace/git-merge=true
+# 	com.e1c.g5.v8.dt.platform.standaloneserver.wst.core/trace=true
+# 	com.e1c.g5.v8.dt.platform.cloud.core/trace/cloud=true
+| pool-1-thread-40 | 2026-04-27 21:42:34.400 | com.e1c.g5.v8.dt.platform.standaloneserver.wst.core | /trace | com.e1c.g5.v8.dt.internal.platform.standaloneserver.wst.core.StandaloneServerWstPlugin | trace | 197 | Populating standalone server runtimes upon service activation |
+| pool-1-thread-40 | 2026-04-27 21:42:34.436 | com._1c.g5.v8.dt.platform.services.core | /trace/platform | com._1c.g5.v8.dt.internal.platform.services.core.PlatformServicesCore | trace | 212 | Reevaluating registered platform installations |
+| pool-1-thread-40 | 2026-04-27 21:42:34.438 | com._1c.g5.v8.dt.platform.services.core | /trace/platform | com._1c.g5.v8.dt.internal.platform.services.core.PlatformServicesCore | trace | 228 | Loaded list of platform installations from store: 0 total |
+| ForkJoinPool.commonPool-worker-1 | 2026-04-27 21:42:34.745 | com._1c.g5.v8.dt.platform.services.core | /trace/platform | com._1c.g5.v8.dt.internal.platform.services.core.PlatformServicesCore | trace | 228 | Saving list of platform installations to store: 1 added, 0 removed, 1 total |
+| pool-1-thread-40 | 2026-04-27 21:42:34.748 | com._1c.g5.v8.dt.platform.services.core | /trace/platform | com._1c.g5.v8.dt.internal.platform.services.core.PlatformServicesCore | trace | 212 | Reevaluating supported platform installations |
+| main | 2026-04-27 22:05:20.323 | com._1c.g5.v8.dt.platform.services.core | /trace/platform | com._1c.g5.v8.dt.internal.platform.services.core.PlatformServicesCore | trace | 212 | Reevaluating supported platform installations |
+| main | 2026-04-27 22:05:20.324 | com._1c.g5.v8.dt.platform.services.core | /trace/platform | com._1c.g5.v8.dt.internal.platform.services.core.PlatformServicesCore | trace | 212 | Reevaluating registered platform installations |
+| main | 2026-04-27 22:05:20.324 | com._1c.g5.v8.dt.platform.services.core | /trace/platform | com._1c.g5.v8.dt.internal.platform.services.core.PlatformServicesCore | trace | 228 | Loaded list of platform installations from store: 1 total |
