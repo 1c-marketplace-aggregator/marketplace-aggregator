@@ -1,0 +1,29 @@
+# 1C local infobases and backups
+*.1CD
+*.1cd
+*.dt
+*.cf
+*.cfe
+
+# Logs and temp files
+*.log
+*.tmp
+*.lgp
+*.lgd
+*.pfl
+
+# Eclipse / EDT workspace cache
+.metadata/
+.recommenders/
+RemoteSystemsTempFiles/
+
+# Build/output folders
+bin/
+build/
+target/
+out/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
