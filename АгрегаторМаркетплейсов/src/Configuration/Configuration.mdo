@@ -45,4 +45,5 @@
   <catalogs>Catalog.Контрагенты</catalogs>
   <catalogs>Catalog.Маркетплейсы</catalogs>
   <catalogs>Catalog.Товары</catalogs>
+  <documents>Document.ОтчетОПродажахМаркетплейса</documents>
 </mdclass:Configuration>
