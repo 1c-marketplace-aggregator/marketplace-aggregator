@@ -46,4 +46,5 @@
   <catalogs>Catalog.Маркетплейсы</catalogs>
   <catalogs>Catalog.Товары</catalogs>
   <documents>Document.ОтчетОПродажахМаркетплейса</documents>
+  <accumulationRegisters>AccumulationRegister.ПродажиМаркетплейсов</accumulationRegisters>
 </mdclass:Configuration>

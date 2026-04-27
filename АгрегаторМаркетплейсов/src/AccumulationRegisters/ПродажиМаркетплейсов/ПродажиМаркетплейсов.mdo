@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="690cc038-8444-415b-8673-92ace21e1bf4">
+  <producedTypes>
+    <selectionType typeId="ea68636a-1f9a-4b72-84bc-d0469d34532d" valueTypeId="d3ac1cba-9b8e-4d64-94f8-4193a5959b43"/>
+    <listType typeId="55212dda-5f4e-44b3-8f74-54722527d789" valueTypeId="4d49ce5d-d251-4769-8e01-e0b885b43375"/>
+    <managerType typeId="64131b37-0488-44c5-94f8-f363dd755db4" valueTypeId="73d9ba45-22a3-449e-a121-d56e569f3c59"/>
+    <recordSetType typeId="a4e42251-89a4-4daf-b960-72457d8e7597" valueTypeId="453b05dc-6c3f-4663-ad20-1a993166b2cc"/>
+    <recordKeyType typeId="129ecbcd-7f19-445a-8d25-75b10a9d5b7b" valueTypeId="fd6e5bf1-b075-4e34-9fa5-2f7d2aef884f"/>
+    <recordType typeId="d64c8b3e-8666-46a4-b5d0-13566675799f" valueTypeId="3831678c-5c31-4efe-a0e1-2927a18f1abd"/>
+  </producedTypes>
+  <name>ПродажиМаркетплейсов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Продажи маркетплейсов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="d0fa40ec-7cb4-44c3-9075-eb10dcb8f222">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="7b15b062-d122-4a76-b6db-ff7d4e2e18c8">
+    <name>СуммаПродажи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма продажи</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="6c3f38e4-9ad6-4aa7-83ec-a9dc06886c7e">
+    <name>СуммаКомиссии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма комиссии</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="fc171132-5ed4-4a16-bf03-b24fe91ab986">
+    <name>Себестоимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Себестоимость</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="cb45998f-ef06-43c0-a2ee-62e959d0f85d">
+    <name>ЧистаяПрибыль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Чистая прибыль</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="50020c0f-ac6e-485a-993d-e9034e978a7d">
+    <name>Товар</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товар</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Товары</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="039f1dff-ed88-4afe-91ee-f0ac3192a521">
+    <name>Маркетплейс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Маркетплейс</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Маркетплейсы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>
