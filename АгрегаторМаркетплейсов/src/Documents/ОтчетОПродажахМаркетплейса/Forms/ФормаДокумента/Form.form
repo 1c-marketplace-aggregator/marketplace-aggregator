@@ -269,6 +269,10 @@
       <dataPath xsi:type="form:DataPath">
         <segments>Объект.Товары.Товар</segments>
       </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>ТоварыТоварПриИзменении</name>
+      </handlers>
       <extendedTooltip>
         <name>ТоварыТоварРасширеннаяПодсказка</name>
         <id>34</id>
@@ -311,6 +315,10 @@
       <dataPath xsi:type="form:DataPath">
         <segments>Объект.Товары.Количество</segments>
       </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>ТоварыКоличествоПриИзменении</name>
+      </handlers>
       <extendedTooltip>
         <name>ТоварыКоличествоРасширеннаяПодсказка</name>
         <id>37</id>
@@ -353,6 +361,10 @@
       <dataPath xsi:type="form:DataPath">
         <segments>Объект.Товары.ЦенаПродажи</segments>
       </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>ТоварыЦенаПродажиПриИзменении</name>
+      </handlers>
       <extendedTooltip>
         <name>ТоварыЦенаПродажиРасширеннаяПодсказка</name>
         <id>40</id>
@@ -411,6 +423,7 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>InputField</type>
+      <readOnly>true</readOnly>
       <editMode>EnterOnInput</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
@@ -437,6 +450,10 @@
       <dataPath xsi:type="form:DataPath">
         <segments>Объект.Товары.Комиссия</segments>
       </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>ТоварыКомиссияПриИзменении</name>
+      </handlers>
       <extendedTooltip>
         <name>ТоварыКомиссияРасширеннаяПодсказка</name>
         <id>46</id>
@@ -495,6 +512,7 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>InputField</type>
+      <readOnly>true</readOnly>
       <editMode>EnterOnInput</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
@@ -537,6 +555,7 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>InputField</type>
+      <readOnly>true</readOnly>
       <editMode>EnterOnInput</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
