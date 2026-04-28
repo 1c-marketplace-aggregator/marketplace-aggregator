@@ -457,7 +457,7 @@
         <id>55</id>
         <title>
           <key>ru</key>
-          <value>Загрузить из CSV/XML</value>
+          <value>Загрузить из CSV/XLSX</value>
         </title>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -597,39 +597,6 @@
     <rowFilter xsi:type="core:UndefinedValue"/>
     <showCommandBarNeedDereferenced>true</showCommandBarNeedDereferenced>
   </items>
-  <items xsi:type="form:Button">
-    <name>ЗагрузитьCSV</name>
-    <id>53</id>
-    <title>
-      <key>ru</key>
-      <value>Загрузить из CSV/XML</value>
-    </title>
-    <visible>true</visible>
-    <enabled>true</enabled>
-    <userVisible>
-      <common>true</common>
-    </userVisible>
-    <extendedTooltip>
-      <name>ЗагрузитьCSVРасширеннаяПодсказка</name>
-      <id>54</id>
-      <type>Label</type>
-      <autoMaxWidth>true</autoMaxWidth>
-      <autoMaxHeight>true</autoMaxHeight>
-      <extInfo xsi:type="form:LabelDecorationExtInfo">
-        <horizontalAlign>Left</horizontalAlign>
-      </extInfo>
-    </extendedTooltip>
-    <type>UsualButton</type>
-    <buttonImportance>Normal</buttonImportance>
-    <autoMaxWidth>true</autoMaxWidth>
-    <autoMaxHeight>true</autoMaxHeight>
-    <placementArea>UserCmds</placementArea>
-    <backColor xsi:type="core:ColorDef">
-      <red>153</red>
-      <green>204</green>
-    </backColor>
-    <representationInContextMenu>Auto</representationInContextMenu>
-  </items>
   <autoCommandBar>
     <name>ФормаКоманднаяПанель</name>
     <id>-1</id>
@@ -667,7 +634,7 @@
     <name>ЗагрузитьИзФайла</name>
     <title>
       <key>ru</key>
-      <value>Загрузить из CSV/XML</value>
+      <value>Загрузить из CSV/XLSX</value>
     </title>
     <id>1</id>
     <use>
