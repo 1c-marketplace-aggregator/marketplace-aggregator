@@ -95,6 +95,10 @@
     <dataPath xsi:type="form:DataPath">
       <segments>Объект.Маркетплейс</segments>
     </dataPath>
+    <handlers>
+      <event>OnChange</event>
+      <name>МаркетплейсПриИзменении</name>
+    </handlers>
     <extendedTooltip>
       <name>МаркетплейсРасширеннаяПодсказка</name>
       <id>9</id>
