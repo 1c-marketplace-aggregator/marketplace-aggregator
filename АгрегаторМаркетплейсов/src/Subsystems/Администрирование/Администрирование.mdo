@@ -13,7 +13,7 @@
   </help>
   <includeInCommandInterface>true</includeInCommandInterface>
   <picture xsi:type="core:PictureRef">
-    <picture>CommonPicture.КартинкаАдминистрация</picture>
+    <picture>CommonPicture.АдминистрацияКартинка</picture>
   </picture>
   <content>Role.Администратор</content>
 </mdclass:Subsystem>

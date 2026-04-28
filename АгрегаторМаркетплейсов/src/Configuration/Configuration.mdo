@@ -42,11 +42,10 @@
   <subsystems>Subsystem.НСИ</subsystems>
   <subsystems>Subsystem.Отчеты</subsystems>
   <subsystems>Subsystem.Продажи</subsystems>
-  <commonPictures>CommonPicture.КартинкаАдминистрация</commonPictures>
-  <commonPictures>CommonPicture.КартинкаГлавное</commonPictures>
-  <commonPictures>CommonPicture.КартинкаНСИ</commonPictures>
-  <commonPictures>CommonPicture.КартинкаОтчеты</commonPictures>
-  <commonPictures>CommonPicture.КартинкаПродажи</commonPictures>
+  <commonPictures>CommonPicture.АдминистрацияКартинка</commonPictures>
+  <commonPictures>CommonPicture.НСИКартинка</commonPictures>
+  <commonPictures>CommonPicture.ОтчетыКартинка</commonPictures>
+  <commonPictures>CommonPicture.ПродажиКартинка</commonPictures>
   <roles>Role.Администратор</roles>
   <catalogs>Catalog.Контрагенты</catalogs>
   <catalogs>Catalog.Маркетплейсы</catalogs>
