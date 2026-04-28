@@ -30,6 +30,7 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Маркетплейсы.Form.ФормаЭлемента</defaultObjectForm>
   <defaultListForm>Catalog.Маркетплейсы.Form.ФормаСписка</defaultListForm>
   <attributes uuid="6169ff54-9746-407b-9be7-244f5df7ea96">
     <name>КомиссияПроцент</name>
@@ -55,6 +56,15 @@
     <synonym>
       <key>ru</key>
       <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ea5ba297-dd83-4ba6-bb7a-458950331a31">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
