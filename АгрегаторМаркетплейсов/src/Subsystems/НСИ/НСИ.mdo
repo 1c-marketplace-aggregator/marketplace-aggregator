@@ -10,4 +10,5 @@
   <content>Catalog.Товары</content>
   <content>Catalog.Маркетплейсы</content>
   <content>Catalog.Контрагенты</content>
+  <content>Role.Администратор</content>
 </mdclass:Subsystem>
