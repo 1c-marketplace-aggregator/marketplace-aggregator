@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="90c33072-0326-4d11-b2e9-d9dc0bd9ba3c">
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="90c33072-0326-4d11-b2e9-d9dc0bd9ba3c">
   <name>Администрирование</name>
   <synonym>
     <key>ru</key>
     <value>Администрирование</value>
   </synonym>
   <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
   <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.КартинкаАдминистрация</picture>
+  </picture>
   <content>Role.Администратор</content>
 </mdclass:Subsystem>
