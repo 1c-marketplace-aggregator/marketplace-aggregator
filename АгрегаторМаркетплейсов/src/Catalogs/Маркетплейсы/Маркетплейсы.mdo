@@ -30,27 +30,12 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
-  <attributes uuid="fabe0ec1-9500-4230-bb8b-0f3ea26aa8a8">
-    <name>Название</name>
-    <synonym>
-      <key>ru</key>
-      <value>Название</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
+  <defaultListForm>Catalog.Маркетплейсы.Form.ФормаСписка</defaultListForm>
   <attributes uuid="6169ff54-9746-407b-9be7-244f5df7ea96">
-    <name>Комиссия</name>
+    <name>КомиссияПроцент</name>
     <synonym>
       <key>ru</key>
-      <value>Комиссия</value>
+      <value>Комиссия процент</value>
     </synonym>
     <type>
       <types>Number</types>
@@ -65,4 +50,13 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <forms uuid="9fe248f6-8411-4f62-b74d-6449db953a19">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:Catalog>
