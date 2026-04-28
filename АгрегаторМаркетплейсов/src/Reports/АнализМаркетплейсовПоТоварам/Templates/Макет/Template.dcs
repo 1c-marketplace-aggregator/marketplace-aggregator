@@ -70,21 +70,89 @@
 				</v8:item>
 			</title>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СредняяЦенаПродажи</dataPath>
+			<field>СредняяЦенаПродажи</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Средняя цена продажи</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЧистаяПрибыльНаЕдиницу</dataPath>
+			<field>ЧистаяПрибыльНаЕдиницу</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Чистая прибыль на единицу</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДоляКомиссииПроцент</dataPath>
+			<field>ДоляКомиссииПроцент</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доля комиссии процент</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РентабельностьПродажПроцент</dataPath>
+			<field>РентабельностьПродажПроцент</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рентабельность продаж процент</v8:content>
+				</v8:item>
+			</title>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
     ПродажиОбороты.Товар КАК Товар,
     ПродажиОбороты.Маркетплейс КАК Маркетплейс,
+
     ПродажиОбороты.КоличествоОборот КАК Количество,
     ПродажиОбороты.СуммаПродажиОборот КАК СуммаПродажи,
     ПродажиОбороты.СуммаКомиссииОборот КАК СуммаКомиссии,
     ПродажиОбороты.СебестоимостьОборот КАК Себестоимость,
-    ПродажиОбороты.ЧистаяПрибыльОборот КАК ЧистаяПрибыль
+    ПродажиОбороты.ЧистаяПрибыльОборот КАК ЧистаяПрибыль,
+
+    ВЫБОР
+        КОГДА ПродажиОбороты.КоличествоОборот = 0
+            ТОГДА 0
+        ИНАЧЕ ПродажиОбороты.СуммаПродажиОборот / ПродажиОбороты.КоличествоОборот
+    КОНЕЦ КАК СредняяЦенаПродажи,
+
+    ВЫБОР
+        КОГДА ПродажиОбороты.КоличествоОборот = 0
+            ТОГДА 0
+        ИНАЧЕ ПродажиОбороты.ЧистаяПрибыльОборот / ПродажиОбороты.КоличествоОборот
+    КОНЕЦ КАК ЧистаяПрибыльНаЕдиницу,
+
+    ВЫБОР
+        КОГДА ПродажиОбороты.СуммаПродажиОборот = 0
+            ТОГДА 0
+        ИНАЧЕ ПродажиОбороты.СуммаКомиссииОборот / ПродажиОбороты.СуммаПродажиОборот * 100
+    КОНЕЦ КАК ДоляКомиссииПроцент,
+
+    ВЫБОР
+        КОГДА ПродажиОбороты.СуммаПродажиОборот = 0
+            ТОГДА 0
+        ИНАЧЕ ПродажиОбороты.ЧистаяПрибыльОборот / ПродажиОбороты.СуммаПродажиОборот * 100
+    КОНЕЦ КАК РентабельностьПродажПроцент
+
 ИЗ
     РегистрНакопления.ПродажиМаркетплейсов.Обороты(
         &amp;НачалоПериода,
         &amp;КонецПериода,
         ,
-    ) КАК ПродажиОбороты</query>
+    ) КАК ПродажиОбороты
+
+</query>
 	</dataSet>
 	<totalField>
 		<dataPath>Количество</dataPath>
@@ -106,6 +174,38 @@
 		<dataPath>ЧистаяПрибыль</dataPath>
 		<expression>Сумма(ЧистаяПрибыль)</expression>
 	</totalField>
+	<totalField>
+		<dataPath>СредняяЦенаПродажи</dataPath>
+		<expression>ВЫБОР
+    КОГДА Сумма(Количество) = 0
+        ТОГДА 0
+    ИНАЧЕ Сумма(СуммаПродажи) / Сумма(Количество)
+КОНЕЦ</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ЧистаяПрибыльНаЕдиницу</dataPath>
+		<expression>ВЫБОР
+    КОГДА Сумма(Количество) = 0
+        ТОГДА 0
+    ИНАЧЕ Сумма(ЧистаяПрибыль) / Сумма(Количество)
+КОНЕЦ</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ДоляКомиссииПроцент</dataPath>
+		<expression>ВЫБОР
+    КОГДА Сумма(СуммаПродажи) = 0
+        ТОГДА 0
+    ИНАЧЕ Сумма(СуммаКомиссии) / Сумма(СуммаПродажи) * 100
+КОНЕЦ</expression>
+	</totalField>
+	<totalField>
+		<dataPath>РентабельностьПродажПроцент</dataPath>
+		<expression>ВЫБОР
+    КОГДА Сумма(СуммаПродажи) = 0
+        ТОГДА 0
+    ИНАЧЕ Сумма(ЧистаяПрибыль) / Сумма(СуммаПродажи) * 100
+КОНЕЦ</expression>
+	</totalField>
 	<parameter>
 		<name>НачалоПериода</name>
 		<title xsi:type="v8:LocalStringType">
@@ -117,11 +217,11 @@
 		<valueType>
 			<v8:Type>xs:dateTime</v8:Type>
 			<v8:DateQualifiers>
-				<v8:DateFractions>DateTime</v8:DateFractions>
+				<v8:DateFractions>Date</v8:DateFractions>
 			</v8:DateQualifiers>
 		</valueType>
+		<value xsi:nil="true"/>
 		<useRestriction>false</useRestriction>
-		<use>Always</use>
 	</parameter>
 	<parameter>
 		<name>КонецПериода</name>
@@ -134,12 +234,30 @@
 		<valueType>
 			<v8:Type>xs:dateTime</v8:Type>
 			<v8:DateQualifiers>
-				<v8:DateFractions>DateTime</v8:DateFractions>
+				<v8:DateFractions>Date</v8:DateFractions>
 			</v8:DateQualifiers>
 		</valueType>
+		<value xsi:nil="true"/>
 		<useRestriction>false</useRestriction>
-		<availableAsField>false</availableAsField>
-		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>МинимальноеКоличество</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Минимальное количество</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>10</v8:Digits>
+				<v8:FractionDigits>0</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+		<value xsi:type="xs:string">1</value>
+		<useRestriction>false</useRestriction>
 	</parameter>
 	<settingsVariant>
 		<dcsset:name>Основной</dcsset:name>
@@ -167,12 +285,24 @@
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>ЧистаяПрибыль</dcsset:field>
 				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СредняяЦенаПродажи</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЧистаяПрибыльНаЕдиницу</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДоляКомиссииПроцент</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>РентабельностьПродажПроцент</dcsset:field>
+				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:dataParameters>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:parameter>НачалоПериода</dcscor:parameter>
 					<dcscor:value xsi:type="v8:StandardBeginningDate">
-						<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+						<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
 						<v8:date>2026-04-28T00:00:00</v8:date>
 					</dcscor:value>
 				</dcscor:item>
@@ -183,7 +313,17 @@
 						<v8:date>2026-04-29T00:00:00</v8:date>
 					</dcscor:value>
 				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МинимальноеКоличество</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">1</dcscor:value>
+				</dcscor:item>
 			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>ЧистаяПрибыльНаЕдиницу</dcsset:field>
+					<dcsset:orderType>Desc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">
 				<dcsset:groupItems>
 					<dcsset:item xsi:type="dcsset:GroupItemField">
@@ -212,6 +352,8 @@
 					<dcsset:selection>
 						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
 					</dcsset:selection>
+					<dcsset:conditionalAppearance>
+					</dcsset:conditionalAppearance>
 				</dcsset:item>
 			</dcsset:item>
 		</dcsset:settings>

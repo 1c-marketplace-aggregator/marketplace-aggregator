@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="019415fc-a01d-43a0-af47-e8d29001d584">
+  <producedTypes>
+    <objectType typeId="b47b6f34-137a-4235-a8a6-155890dd2295" valueTypeId="3f7654f1-7752-4bf1-9a96-06af39de69f0"/>
+    <managerType typeId="041fe8b7-b1f6-4b51-9e2e-3b7935c33d1d" valueTypeId="5ca5f77d-c8ce-4e73-b00f-1b9ee3808847"/>
+  </producedTypes>
+  <name>АнализМаркетплейсовПоТоварам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ маркетплейсов по товарам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.АнализМаркетплейсовПоТоварам.Template.Макет</mainDataCompositionSchema>
+  <templates uuid="ca9550ba-3176-4c92-84dd-5efb23ec19c1">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

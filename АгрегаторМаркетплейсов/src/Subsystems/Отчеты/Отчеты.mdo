@@ -8,5 +8,6 @@
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>Report.ДоходыПоТоварам</content>
+  <content>Report.АнализМаркетплейсовПоТоварам</content>
   <content>Role.Администратор</content>
 </mdclass:Subsystem>
