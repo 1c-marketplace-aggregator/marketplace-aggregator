@@ -8,4 +8,5 @@
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>Document.ОтчетОПродажахМаркетплейса</content>
+  <content>Role.Администратор</content>
 </mdclass:Subsystem>

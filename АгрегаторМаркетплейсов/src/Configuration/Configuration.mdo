@@ -42,6 +42,7 @@
   <subsystems>Subsystem.НСИ</subsystems>
   <subsystems>Subsystem.Отчеты</subsystems>
   <subsystems>Subsystem.Продажи</subsystems>
+  <roles>Role.Администратор</roles>
   <catalogs>Catalog.Контрагенты</catalogs>
   <catalogs>Catalog.Маркетплейсы</catalogs>
   <catalogs>Catalog.Товары</catalogs>
