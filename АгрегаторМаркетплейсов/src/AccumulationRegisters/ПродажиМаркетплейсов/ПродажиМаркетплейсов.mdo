@@ -14,6 +14,7 @@
     <value>Продажи маркетплейсов</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
   <dataLockControlMode>Managed</dataLockControlMode>
   <enableTotalsSplitting>true</enableTotalsSplitting>
   <resources uuid="d0fa40ec-7cb4-44c3-9075-eb10dcb8f222">

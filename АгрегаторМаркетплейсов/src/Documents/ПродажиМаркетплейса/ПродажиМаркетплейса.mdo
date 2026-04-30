@@ -7,13 +7,13 @@
     <listType typeId="0f852c89-7385-495a-8b56-b29d41a55335" valueTypeId="85ec6001-1f7b-4e2a-920e-48c0040bbf08"/>
     <managerType typeId="e2b03455-f8f0-43ad-9706-4ac9c704c02e" valueTypeId="13a69ca3-6133-4fac-95c2-436776a1f0cb"/>
   </producedTypes>
-  <name>ОтчетОПродажахМаркетплейса</name>
+  <name>ПродажиМаркетплейса</name>
   <synonym>
     <key>ru</key>
-    <value>Отчет о продажах маркетплейса</value>
+    <value>Продажи маркетплейса</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
-  <inputByString>Document.ОтчетОПродажахМаркетплейса.StandardAttribute.Number</inputByString>
+  <inputByString>Document.ПродажиМаркетплейса.StandardAttribute.Number</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
   <createOnInput>Use</createOnInput>
   <dataLockControlMode>Managed</dataLockControlMode>
@@ -23,8 +23,9 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
-  <defaultObjectForm>Document.ОтчетОПродажахМаркетплейса.Form.ФормаДокумента</defaultObjectForm>
-  <defaultListForm>Document.ОтчетОПродажахМаркетплейса.Form.ФормаСписка</defaultListForm>
+  <defaultObjectForm>Document.ПродажиМаркетплейса.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.ПродажиМаркетплейса.Form.ФормаСписка</defaultListForm>
+  <realTimePosting>Deny</realTimePosting>
   <registerRecords>AccumulationRegister.ПродажиМаркетплейсов</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>

@@ -280,7 +280,7 @@
     </edit>
     <main>true</main>
     <extInfo xsi:type="form:DynamicListExtInfo">
-      <mainTable>Document.ОтчетОПродажахМаркетплейса</mainTable>
+      <mainTable>Document.ПродажиМаркетплейса</mainTable>
       <dynamicDataRead>true</dynamicDataRead>
       <autoFillAvailableFields>true</autoFillAvailableFields>
       <autoSaveUserSettings>true</autoSaveUserSettings>

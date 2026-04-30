@@ -616,7 +616,7 @@
     <name>Объект</name>
     <id>1</id>
     <valueType>
-      <types>DocumentObject.ОтчетОПродажахМаркетплейса</types>
+      <types>DocumentObject.ПродажиМаркетплейса</types>
     </valueType>
     <view>
       <common>true</common>
@@ -649,7 +649,14 @@
     <selectedRowsUse>Auto</selectedRowsUse>
   </formCommands>
   <commandInterface>
-    <navigationPanel/>
+    <navigationPanel>
+      <cmiFragmentRecord>
+        <command>AccumulationRegister.ПродажиМаркетплейсов.StandardCommand.OpenByRecorder</command>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+      </cmiFragmentRecord>
+    </navigationPanel>
     <commandBar/>
   </commandInterface>
   <extInfo xsi:type="form:DocumentFormExtInfo">

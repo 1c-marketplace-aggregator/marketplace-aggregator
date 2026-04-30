@@ -4,13 +4,13 @@
     <objectType typeId="b47b6f34-137a-4235-a8a6-155890dd2295" valueTypeId="3f7654f1-7752-4bf1-9a96-06af39de69f0"/>
     <managerType typeId="041fe8b7-b1f6-4b51-9e2e-3b7935c33d1d" valueTypeId="5ca5f77d-c8ce-4e73-b00f-1b9ee3808847"/>
   </producedTypes>
-  <name>АнализМаркетплейсовПоТоварам</name>
+  <name>АнализМаркетплейсов</name>
   <synonym>
     <key>ru</key>
-    <value>Анализ маркетплейсов по товарам</value>
+    <value>Анализ маркетплейсов</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
-  <mainDataCompositionSchema>Report.АнализМаркетплейсовПоТоварам.Template.Макет</mainDataCompositionSchema>
+  <mainDataCompositionSchema>Report.АнализМаркетплейсов.Template.Макет</mainDataCompositionSchema>
   <templates uuid="ca9550ba-3176-4c92-84dd-5efb23ec19c1">
     <name>Макет</name>
     <synonym>

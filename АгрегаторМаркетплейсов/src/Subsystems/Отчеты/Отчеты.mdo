@@ -11,6 +11,7 @@
     <picture>CommonPicture.ОтчетыКартинка</picture>
   </picture>
   <content>Report.ДоходыПоТоварам</content>
-  <content>Report.АнализМаркетплейсовПоТоварам</content>
+  <content>Report.АнализМаркетплейсов</content>
   <content>Role.Администратор</content>
+  <content>Report.РейтингТоваров</content>
 </mdclass:Subsystem>

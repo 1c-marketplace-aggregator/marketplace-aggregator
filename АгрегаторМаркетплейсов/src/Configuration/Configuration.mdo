@@ -50,8 +50,9 @@
   <catalogs>Catalog.Контрагенты</catalogs>
   <catalogs>Catalog.Маркетплейсы</catalogs>
   <catalogs>Catalog.Товары</catalogs>
-  <documents>Document.ОтчетОПродажахМаркетплейса</documents>
-  <reports>Report.АнализМаркетплейсовПоТоварам</reports>
+  <documents>Document.ПродажиМаркетплейса</documents>
+  <reports>Report.АнализМаркетплейсов</reports>
   <reports>Report.ДоходыПоТоварам</reports>
+  <reports>Report.РейтингТоваров</reports>
   <accumulationRegisters>AccumulationRegister.ПродажиМаркетплейсов</accumulationRegisters>
 </mdclass:Configuration>
