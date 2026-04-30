@@ -10,6 +10,6 @@
   <picture xsi:type="core:PictureRef">
     <picture>CommonPicture.ПродажиКартинка</picture>
   </picture>
-  <content>Document.ОтчетОПродажахМаркетплейса</content>
+  <content>Document.ПродажиМаркетплейса</content>
   <content>Role.Администратор</content>
 </mdclass:Subsystem>

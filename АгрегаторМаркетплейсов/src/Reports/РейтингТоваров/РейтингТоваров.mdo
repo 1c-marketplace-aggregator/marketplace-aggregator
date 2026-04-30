@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="92217bc0-068f-4fc7-8419-77129d188427">
+  <producedTypes>
+    <objectType typeId="65db3e48-eeef-406b-bfee-90a345843a30" valueTypeId="e528caf4-6da9-4044-b3f3-3e7edce0eff3"/>
+    <managerType typeId="dddf5306-f327-41db-a025-e13fa2da1cc9" valueTypeId="30add5f7-b3df-43d2-8052-aaecdaaead2d"/>
+  </producedTypes>
+  <name>РейтингТоваров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рейтинг товаров по выручке</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.РейтингТоваров.Template.СКД</mainDataCompositionSchema>
+  <templates uuid="d28d3d83-3d35-45db-9598-e7679dfdc944">
+    <name>СКД</name>
+    <synonym>
+      <key>ru</key>
+      <value>СКД</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>
